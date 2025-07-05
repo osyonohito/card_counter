@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+  background: #f0f2f5;
+  font-family: "Segoe UI", sans-serif;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#classSelect {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1.2rem;
+  background: #f9f9f9;
+}
+
+/* 1行 = カード名 + [+] + [-] + カウント */
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, auto);
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background: #fafafa;
+  border-radius: 6px;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.card-name {
+  font-weight: 500;
+}
+
+/* + − ボタン */
+.btn {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: none;
+  border-radius: 4px;
+  background: #e0e7ff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+.btn:hover {
+  background: #c7d2fe;
+}
+
+/* カウント表示 */
+.count {
+  width: 2.2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
